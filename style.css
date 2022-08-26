@@ -7,7 +7,7 @@
 body {
 
   min-height: 100vh;
-  background: aliceblue
+  background: black
 }
 
 footer {
@@ -18,6 +18,6 @@ footer {
   bottom: 0px;
   width: 100%;
   height: 30px;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: whitesmoke;
 }
