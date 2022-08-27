@@ -23,7 +23,7 @@
 
     <div class="form-container">
 
-      <div class="lorum">
+      <div class="lorum paddingleft">
 
         <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur,
           adipisicing elit. Necessitatibus, commodi!</p>
@@ -32,19 +32,43 @@
 
       </div>
       <form action="#">
-        <div class="signup">
-          <div class="signup-title">
-            <p>Let's do this!</p>
+        <div class="signup paddingleft">
+
+          <p class="signup-title">Let's do this!</p>
+
+          <div class="inputs">
+            <label for="firstname">First Name </label>
+            <input type="text" name="user-firstname" id="firstname" required>
           </div>
-          <div class="form">
-
+          <div class="inputs">
+            <label for="lastname">Last Name </label>
+            <input type="text" name="user-lastname" id="lastname" required>
           </div>
+          <div class="inputs">
+            <label for="email">Email </label>
+            <input type="text" name="user-email" id="email" required>
+          </div>
+          <div class="inputs">
+            <label for="number">Phone Number </label>
+            <input type="text" name="user-number" id="number" minlength="9" maxlength="9" required>
+          </div>
+          <div class="inputs">
+            <label for="password">Password </label>
+            <input type="password" name="user-password" id="password" required>
+          </div>
+          <div class="inputs">
+            <label for="confirmpassword">Confirm Password
 
-
-
+            </label>
+            <input type="password" name="user-confirmpassword" id="confirmpassword" required>
+          </div>
 
         </div>
+        <div class="button paddingleft"><button type="submit">Create Account</button></div>
       </form>
+      <div class="login paddingleft">
+        <p>Already have an account?</p><a href="#">Log in</a>
+      </div>
     </div>
   </div>
 
