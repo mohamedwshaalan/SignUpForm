@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 /* DEFAULT STARTINGS STYLE */
 * {
-  font-family: monospace;
+  font-family: 'JetBrains Mono', monospace;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -72,7 +74,7 @@
 .lorum {
   color: black;
   width: 90%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .spaced-text {
@@ -98,15 +100,15 @@
 
 .signup-title {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
 .inputs {
   display: flex;
   flex-flow: column wrap;
-  width: 50%;
-  font-size: 1.2rem;
+  width: 45%;
+  font-size: 1.0rem;
   text-transform: uppercase;
 
 }
@@ -125,7 +127,7 @@ button {
   background-color: white;
   color: darkcyan;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   border: 2px solid darkcyan;
   border-radius: 4px;
   padding: 10px 40px;
@@ -137,8 +139,12 @@ button:hover {
   color: white;
 }
 
+button:active {
+  transform: scale(1.05);
+}
+
 .login {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   display: flex;
   gap: 5px;
 }
@@ -150,7 +156,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: turquoise;
 }
 
 /* FOOTER */
@@ -160,8 +166,82 @@ footer {
   align-items: center;
   position: absolute;
   bottom: 0px;
+  font-size: larger;
+  font-weight: bold;
   width: 100%;
   height: 5%;
   color: black;
 
+}
+
+/*MOBILE IMPLEMENTATION*/
+/* 870 PIXEL WIDTH*/
+@media screen and (max-width:869px) {
+  .main-container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .picture-container {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-size: 100vw;
+  }
+
+  .logo {
+    width: 100vw;
+    position: static;
+    gap: 10px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .paddingleft {
+    padding: 10px 20px;
+  }
+
+  .spaced-text {
+    padding: 20px 0;
+    margin: 0;
+
+  }
+
+  .signup {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .inputs {
+    text-align: left;
+    width: auto;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    font-size: 0.8rem;
+    height: 1.5rem;
+    width: 70vw;
+  }
+
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  footer {
+    display: none;
+  }
 }
