@@ -1,2 +1,8 @@
 # SignUpForm
-Sign up form project using form validation, responsive and dynamic layout.
+
+Signup Form Project
+
+Learned:
+1. Form validation
+2. Responsive window layout
+3. Mobile compatible design and styling
