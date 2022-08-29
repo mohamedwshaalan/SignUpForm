@@ -174,8 +174,14 @@ footer {
 
 }
 
+img {
+  height: 20px;
+  width: auto;
+
+}
+
 /*MOBILE IMPLEMENTATION*/
-/* 870 PIXEL WIDTH*/
+
 @media screen and (max-width:869px) {
   .main-container {
     flex-direction: column;
