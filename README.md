@@ -2,7 +2,7 @@
 
 Signup Form Project
 
-Live preview @ 
+Live preview @ https://mohamedwshaalan.github.io/SignUpForm/
 
 Learned:
 1. Form validation
